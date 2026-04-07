@@ -1,0 +1,686 @@
+/* ==================== HERO ==================== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 426px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 63px;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 30, 30, 0.6);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  padding: 0 5vw;
+  max-width: 860px;
+}
+
+.heroEyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #2e5bff;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.heroHeading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 96px;
+  letter-spacing: -4.8px;
+  color: #ffffff;
+}
+
+.heroDesc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32.5px;
+  color: #ffffff;
+  width: 35vw;
+}
+
+/* ==================== FOUNDER ==================== */
+.founderSection {
+  padding: 48px 10vw;
+  background: #fcf9f8;
+}
+
+.founderContainer {
+  background: #f6f3f2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+
+.founderImageWrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.founderImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founderInfo {
+  padding: 24px 96px 37px 10px;
+}
+
+.founderBorder {
+  border-left: 2px solid #2e5bff;
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.founderRole {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #1268ff;
+}
+
+.founderName {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.founderBio {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 39.6px;
+  color: #0b0b0b;
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+.founderQuoteBox {
+  background: #ffffff;
+  border: 1px solid rgba(196, 197, 217, 0.2);
+  border-radius: 4px;
+  padding: 31px 32px 32px;
+}
+
+.quoteText {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.5px;
+  color: #1c1b1b;
+}
+
+/* ==================== LEADERSHIP GRID ==================== */
+.leadershipSection {
+  background: #fcf9f8;
+  padding: 96px 10vw;
+}
+
+.leadershipContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.leadershipHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.headerEyebrow {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #5f5e5e;
+}
+
+.headerHeading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.75px;
+  color: #1c1b1b;
+}
+
+.headerDivider {
+  flex: 1;
+  height: 1px;
+  background: rgba(196, 197, 217, 0.3);
+  margin-top: 6px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.headerVersion {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #747688;
+  flex-shrink: 0;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.teamCard {
+  background: #fcf9f8;
+  border: 1px solid rgba(196, 197, 217, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cardImageWrapper {
+  position: relative;
+  background: #ffffff;
+  height: 256px;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.unitBadge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  padding: 4px 12px;
+  background: #2e5bff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.cardInfo {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cardName {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1c1b1b;
+}
+
+.cardRole {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  color: #0040e0;
+}
+
+.cardDesc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.75px;
+  color: #5f5e5e;
+  margin-top: 11px;
+}
+
+/* ==================== CTA ==================== */
+.ctaSection {
+  background: #1163fb;
+  padding: 128px 10vw;
+}
+
+.ctaContainer {
+  margin: 0 auto;
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.ctaIconBox {
+  width: 238px;
+  height: 254px;
+  flex-shrink: 0;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ctaContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+}
+
+.ctaHeading {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -1.5px;
+  color: #fcf9f8;
+}
+
+.ctaDesc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(252, 249, 248, 0.7);
+  max-width: 672px;
+}
+
+.ctaBtns {
+  display: flex;
+  gap: 16px;
+  padding-top: 16px;
+}
+
+.ctaBtnWhite {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16.5px 40px;
+  background: #ffffff;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #000000;
+  transition: background 0.2s;
+}
+
+.ctaBtnWhite:hover {
+  background: #eae7e7;
+}
+
+.ctaBtnOutline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 40px;
+  border: 1px solid rgba(252, 249, 248, 0.3);
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #fcf9f8;
+  transition: all 0.2s;
+}
+
+.ctaBtnOutline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ==================== TABLET (1024px) ==================== */
+@media (max-width: 1024px) {
+  .hero {
+    height: 360px;
+  }
+
+  .heroContent {
+    padding: 0 24px;
+    max-width: 100%;
+  }
+
+  .heroDesc {
+    width: auto;
+  }
+
+  /* Founder */
+  .founderSection {
+    padding: 40px 24px;
+  }
+
+  .founderContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .founderImageWrapper {
+    max-height: 400px;
+  }
+
+  .founderImage {
+    object-position: center top;
+  }
+
+  .founderInfo {
+    padding: 32px 24px;
+  }
+
+  .founderBorder {
+    padding-left: 24px;
+  }
+
+  .founderBio {
+    line-height: 32px;
+  }
+
+  /* Leadership Grid */
+  .leadershipSection {
+    padding: 64px 24px;
+  }
+
+  .leadershipContainer {
+    gap: 40px;
+  }
+
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .headerDivider {
+    display: none;
+  }
+
+  .headerVersion {
+    display: none;
+  }
+
+  /* CTA */
+  .ctaSection {
+    padding: 80px 24px;
+  }
+
+  .ctaContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ctaIconBox {
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  .ctaContent {
+    align-items: center;
+  }
+
+  .ctaHeading {
+    font-size: 48px;
+    line-height: 50px;
+  }
+}
+
+/* ==================== MOBILE (768px) ==================== */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 320px;
+    padding: 72px 0 36px;
+    margin-top: 56px;
+  }
+
+  .heroContent {
+    padding: 0 24px;
+  }
+
+  .heroHeading {
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: -2px;
+  }
+
+  .heroDesc {
+    font-size: 15px;
+    line-height: 24px;
+    width: auto;
+  }
+
+  /* Founder */
+  .founderName {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .founderRole {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .founderBio {
+    font-size: 13px;
+    line-height: 28px;
+  }
+
+  .founderQuoteBox {
+    padding: 24px;
+  }
+
+  .quoteText {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  /* Leadership */
+  .leadershipSection {
+    padding: 48px 24px;
+  }
+
+  .headerHeading {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .teamGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .cardImageWrapper {
+    height: 220px;
+  }
+
+  .cardInfo {
+    padding: 20px;
+  }
+
+  .cardName {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* CTA */
+  .ctaSection {
+    padding: 64px 24px;
+  }
+
+  .ctaHeading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .ctaDesc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .ctaBtns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ctaBtnWhite,
+  .ctaBtnOutline {
+    width: 100%;
+    text-align: center;
+    padding: 14px 24px;
+  }
+}
+
+/* ==================== SMALL MOBILE (480px) ==================== */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 280px;
+    padding: 68px 0 32px;
+  }
+
+  .heroContent {
+    padding: 0 16px;
+  }
+
+  .heroHeading {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .heroDesc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /* Founder */
+  .founderSection {
+    padding: 32px 16px;
+  }
+
+  .founderInfo {
+    padding: 24px 16px;
+  }
+
+  .founderBorder {
+    padding-left: 16px;
+  }
+
+  .founderName {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .founderRole {
+    font-size: 12px;
+  }
+
+  .founderBio {
+    font-size: 12px;
+    line-height: 24px;
+    padding-top: 12px;
+    padding-bottom: 16px;
+  }
+
+  .founderQuoteBox {
+    padding: 20px;
+  }
+
+  .quoteText {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  /* Leadership */
+  .leadershipSection {
+    padding: 40px 16px;
+  }
+
+  .leadershipContainer {
+    gap: 32px;
+  }
+
+  .headerHeading {
+    font-size: 22px;
+  }
+
+  .teamGrid {
+    gap: 16px;
+  }
+
+  .cardImageWrapper {
+    height: 200px;
+  }
+
+  .cardInfo {
+    padding: 16px;
+  }
+
+  .cardName {
+    font-size: 15px;
+  }
+
+  .cardDesc {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  /* CTA */
+  .ctaSection {
+    padding: 48px 16px;
+  }
+
+  .ctaHeading {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .ctaDesc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .ctaBtnWhite,
+  .ctaBtnOutline {
+    padding: 12px 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}

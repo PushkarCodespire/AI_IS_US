@@ -1,0 +1,513 @@
+/* ==================== HERO ==================== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 426px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 63px;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 30, 30, 0.6);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  padding: 0 10vw;
+  max-width: 900px;
+}
+
+.heroEyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #2e5bff;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.heroHeading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 96px;
+  letter-spacing: -4.8px;
+  color: #ffffff;
+}
+
+.heroDesc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29.25px;
+  color: #ffffff;
+  max-width: 795px;
+}
+
+/* ==================== CONTACT SECTION ==================== */
+.contactSection {
+  background: #ffffff;
+  box-shadow: 0 5px 26px rgba(0, 0, 0, 0.06);
+  padding: 80px 10vw;
+}
+
+.contactContainer {
+  margin: 0 auto;
+  display: flex;
+  gap: 100px;
+}
+
+.infoColumn {
+  width: 445px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.infoHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.infoTitle {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.infoDivider {
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+}
+
+.infoCards {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.infoCard {
+  background: #ffffff;
+  border-radius: 19px;
+  padding: 14px 17px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.iconCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fcf9f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.iconCircle img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.infoCardTitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1c1b1b;
+}
+
+.infoCardText {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #5f5e5e;
+}
+
+.contactWith {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.contactLabel {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 8px;
+}
+
+.socialIcon {
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.socialIcon:hover {
+  background: #d5d5d5;
+}
+
+/* Form */
+.formColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.formHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formTitle {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.formSubtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.formGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroupFull {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formLabel {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1c1b1b;
+}
+
+.formInput {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-bottom: 2px solid black;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #1c1b1b;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.formInput:focus {
+  border-bottom-color: #1163fb;
+}
+
+.formInput::placeholder {
+  color: #b0b0b0;
+}
+
+.formTextarea {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-bottom: 2px solid black;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #1c1b1b;
+  background: transparent;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.formTextarea:focus {
+  border-bottom-color: #1163fb;
+}
+
+.formTextarea::placeholder {
+  color: #b0b0b0;
+}
+
+.submitBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px;
+  background: #1163fb;
+  border-radius: 7px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  width: fit-content;
+  transition: background 0.2s;
+}
+
+.submitBtn:hover {
+  background: #0d52d9;
+}
+
+.arrow {
+  height: 12px;
+}
+
+/* ==================== MAP SECTION ==================== */
+.mapSection {
+  background: #fcf9f8;
+  padding: 80px 10vw;
+}
+
+.mapHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.mapEyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #2e5bff;
+}
+
+.mapHeading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -0.9px;
+  color: #1c1b1b;
+}
+
+.mapWrapper {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #eae7e7;
+}
+
+.mapWrapper iframe {
+  display: block;
+}
+
+/* ==================== TABLET (1024px) ==================== */
+@media (max-width: 1024px) {
+  .hero {
+    height: 360px;
+  }
+
+  .heroContent {
+    padding: 0 24px;
+    max-width: 100%;
+  }
+
+  .contactSection {
+    padding: 64px 24px;
+  }
+
+  .contactContainer {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .infoColumn {
+    width: 100%;
+  }
+
+  .formColumn {
+    gap: 32px;
+  }
+
+  .mapSection {
+    padding: 64px 24px;
+  }
+
+  .mapWrapper {
+    height: 380px;
+  }
+}
+
+/* ==================== MOBILE (768px) ==================== */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 320px;
+    padding: 72px 0 36px;
+    margin-top: 56px;
+  }
+
+  .heroContent {
+    padding: 0 24px;
+  }
+
+  .heroHeading {
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: -2px;
+  }
+
+  .heroDesc {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .contactSection {
+    padding: 48px 24px;
+  }
+
+  .infoTitle,
+  .formTitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .infoCards {
+    gap: 16px;
+  }
+
+  .infoCardTitle {
+    font-size: 18px;
+  }
+
+  .mapSection {
+    padding: 48px 24px;
+  }
+
+  .mapHeading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .mapWrapper {
+    height: 300px;
+    border-radius: 8px;
+  }
+}
+
+/* ==================== SMALL MOBILE (480px) ==================== */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 280px;
+    padding: 68px 0 32px;
+  }
+
+  .heroContent {
+    padding: 0 16px;
+  }
+
+  .heroHeading {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .heroDesc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .contactSection {
+    padding: 32px 16px;
+  }
+
+  .contactContainer {
+    gap: 32px;
+  }
+
+  .formGrid {
+    gap: 24px;
+  }
+
+  .infoTitle,
+  .formTitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .mapSection {
+    padding: 40px 16px;
+  }
+
+  .mapHeading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .mapWrapper {
+    height: 250px;
+  }
+}

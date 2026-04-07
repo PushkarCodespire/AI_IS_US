@@ -1,0 +1,646 @@
+/* ==================== HERO ==================== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 426px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 63px;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 30, 30, 0.6);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  padding: 0 5vw;
+  width: 45vw;
+}
+
+.heroEyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #2e5bff;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.heroHeading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 96px;
+  letter-spacing: -4.8px;
+  color: #ffffff;
+}
+
+.heroDesc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32.5px;
+  color: #ffffff;
+  max-width: 882px;
+}
+
+/* ==================== SHARED ==================== */
+.sectionLabel {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #5f5e5e;
+}
+
+.sectionTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -0.9px;
+  color: #1c1b1b;
+}
+
+/* ==================== MISSION ==================== */
+.missionSection {
+  background: #f6f3f2;
+  padding: 128px 10vw;
+}
+
+.missionContainer {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 356px 1fr;
+  gap: 0;
+  align-items: start;
+}
+
+.missionLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 310px;
+}
+
+.missionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.missionIcon {
+  width: 44px;
+  height: 44px;
+}
+
+.missionRight {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.missionStatement {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 62px;
+  letter-spacing: -1.2px;
+  color: #1c1b1b;
+}
+
+.missionTags {
+  display: flex;
+  gap: 16px;
+}
+
+.missionTag {
+  padding: 4px 12px;
+  background: #aeaeae;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* ==================== VISION ==================== */
+.visionSection {
+  background: #fcf9f8;
+  padding: 128px 58px;
+}
+
+.visionContainer {
+  margin: 0 auto;
+  padding: 0 7vw;
+  display: flex;
+  gap: 10vw;
+}
+
+.visionImageWrapper {
+  position: relative;
+  width: 457px;
+  height: 500px;
+}
+
+.visionBlueOffset {
+  position: absolute;
+  top: -11px;
+  left: -13px;
+  width: 483px;
+  height: 522px;
+  border-radius: 16px;
+  background: #2e5bff;
+}
+
+.visionCard {
+  position: relative;
+  width: 475px;
+  height: 515px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid rgba(196, 197, 217, 0.3);
+  overflow: hidden;
+}
+
+.visionImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.visionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.visionLabel {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #0040e0;
+}
+
+.visionStatement {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  color: #1c1b1b;
+  text-transform: lowercase;
+  margin-top: 16px;
+}
+
+/* ==================== PRINCIPLES ==================== */
+.principlesSection {
+  border-top: 1px solid rgba(196, 197, 217, 0.2);
+  padding: 73px 10vw 128px;
+  background: #fcf9f8;
+}
+
+.principlesContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.principlesHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.principlesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: rgba(196, 197, 217, 0.3);
+  border: 1px solid rgba(196, 197, 217, 0.3);
+  gap: 2px;
+}
+
+.principleCard {
+  background: #fcf9f8;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 326px;
+}
+
+.principleTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.principleNum {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #0040e0;
+}
+
+.principleTitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: #1c1b1b;
+  white-space: pre-line;
+}
+
+.principleDesc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.75px;
+  color: #5f5e5e;
+}
+
+/* ==================== CTA ==================== */
+.ctaSection {
+  background: #1163fb;
+  padding: 96px 10vw;
+}
+
+.ctaContainer {
+  max-width: 896px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  text-align: center;
+}
+
+.ctaHeading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.4px;
+  color: #fcf9f8;
+}
+
+.ctaBtns {
+  display: flex;
+  gap: 24px;
+}
+
+.ctaBtnWhite {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  min-width: 221px;
+  min-height: 54px;
+  background: #ffffff;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #000000;
+  transition: background 0.2s;
+}
+
+.ctaBtnWhite:hover {
+  background: #eae7e7;
+}
+
+.ctaBtnOutline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  min-width: 292px;
+  min-height: 54px;
+  background: #1163fb;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #fcf9f8;
+  transition: background 0.2s;
+}
+
+.ctaBtnOutline:hover {
+  background: #0d52d9;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1024px) {
+  .hero {
+    height: 360px;
+  }
+
+  .heroContent {
+    padding: 0 24px;
+    width: auto;
+  }
+
+  /* Mission */
+  .missionSection {
+    padding: 80px 24px;
+  }
+
+  .missionContainer {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .missionLeft {
+    min-height: auto;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .missionStatement {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  /* Vision */
+  .visionSection {
+    padding: 80px 24px;
+  }
+
+  .visionContainer {
+    flex-direction: column;
+    gap: 48px;
+    padding: 0;
+  }
+
+  .visionImageWrapper {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 457 / 500;
+  }
+
+  .visionBlueOffset {
+    width: calc(100% + 13px);
+    height: calc(100% + 11px);
+  }
+
+  .visionCard {
+    width: calc(100% - 8px);
+    height: calc(100% - 7px);
+  }
+
+  .visionStatement {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  /* Principles */
+  .principlesSection {
+    padding: 64px 24px 96px;
+  }
+
+  .principlesContainer {
+    gap: 48px;
+  }
+
+  .principlesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* CTA */
+  .ctaSection {
+    padding: 64px 24px;
+  }
+
+  .ctaContainer {
+    gap: 24px;
+  }
+}
+
+/* ==================== MOBILE (768px) ==================== */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 320px;
+    padding: 72px 0 36px;
+    margin-top: 56px;
+  }
+
+  .heroContent {
+    width: auto;
+    padding: 0 24px;
+  }
+
+  .heroHeading {
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: -2px;
+  }
+
+  .heroDesc {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  /* Mission */
+  .sectionLabel {
+    font-size: 11px;
+  }
+
+  .sectionTitle {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .missionLeft {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .missionStatement {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .missionTags {
+    flex-wrap: wrap;
+  }
+
+  /* Vision */
+  .visionStatement {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .visionImageWrapper {
+    max-width: 320px;
+  }
+
+  /* Principles */
+  .principlesSection {
+    padding: 48px 24px 80px;
+  }
+
+  .principlesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .principleCard {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .principleTitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .principleDesc {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  /* CTA */
+  .ctaHeading {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .ctaBtns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ctaBtnWhite,
+  .ctaBtnOutline {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+/* ==================== SMALL MOBILE (480px) ==================== */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 280px;
+    padding: 68px 0 32px;
+  }
+
+  .heroContent {
+    padding: 0 16px;
+  }
+
+  .heroHeading {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .heroDesc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /* Mission */
+  .missionSection {
+    padding: 64px 16px;
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .missionStatement {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .missionIcon {
+    display: none;
+  }
+
+  /* Vision */
+  .visionSection {
+    padding: 48px 16px;
+  }
+
+  .visionImageWrapper {
+    max-width: 280px;
+  }
+
+  .visionStatement {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  /* Principles */
+  .principlesSection {
+    padding: 40px 16px 64px;
+  }
+
+  .principlesContainer {
+    gap: 32px;
+  }
+
+  .principleCard {
+    padding: 20px;
+  }
+
+  .principleNum {
+    font-size: 18px;
+  }
+
+  .principleTitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  /* CTA */
+  .ctaSection {
+    padding: 48px 16px;
+  }
+
+  .ctaHeading {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .ctaBtnWhite,
+  .ctaBtnOutline {
+    font-size: 12px;
+    min-height: 48px;
+  }
+}

@@ -1,0 +1,898 @@
+/* ==================== HERO ==================== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 426px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 63px;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 30, 30, 0.6);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  padding: 0 5vw;
+}
+
+.heroEyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: #1163fb;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.heroHeading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 96px;
+  letter-spacing: -4.8px;
+  color: #ffffff;
+}
+
+.heroDesc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29.25px;
+  color: #ffffff;
+  max-width: 795px;
+}
+
+/* ==================== SHARED ==================== */
+.sectionEyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 3.25px;
+  text-transform: uppercase;
+  color: #2e5bff;
+}
+
+.sectionHeading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #1c1b1b;
+}
+
+/* ==================== FRICTION CRISIS ==================== */
+.frictionSection {
+  background: #fcf9f8;
+  padding: 48px 10vw;
+}
+
+.frictionContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.frictionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.problemsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.problemRow {
+  display: flex;
+  gap: 23px;
+}
+
+.problemCardLarge {
+  flex: 2;
+  background: #ffffff;
+  border: 1px solid rgba(196, 197, 217, 0.2);
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 400px;
+  justify-content: center;
+}
+
+.problemTitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1c1b1b;
+}
+
+.problemTitleAlt {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1c1b1b;
+}
+
+.problemDesc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: #5f5e5e;
+  max-width: 484px;
+}
+
+.problemDescSmall {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #5f5e5e;
+}
+
+.problemSolution {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: #1163fb;
+}
+
+.problemCardSmallGray {
+  flex: 1;
+  background: #e5e2e1;
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.problemSmallContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.problemImageWrapper {
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.problemImage {
+  width: 100%;
+  height: auto;
+}
+
+.problemCardSmallWhite {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid rgba(196, 197, 217, 0.2);
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+.problemCardBlue {
+  flex: 2;
+  background: #2e5bff;
+  padding: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.blueCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  max-width: 408px;
+}
+
+.blueCardTitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 34px;
+  color: #ffffff;
+}
+
+.blueCardDesc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.whitepaperBtn {
+  display: inline-block;
+  padding: 11px 23px;
+  background: #fcf9f8;
+  border-radius: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 1.13px;
+  text-transform: uppercase;
+  color: #0040e0;
+  width: fit-content;
+  transition: background 0.2s;
+}
+
+.whitepaperBtn:hover {
+  background: #eae7e7;
+}
+
+/* ==================== VALUE & BENEFITS ==================== */
+.valueSection {
+  background: #fcf9f8;
+  padding: 87px 10vw;
+  border: 1px solid #eae7e7;
+}
+
+.valueContainer {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.valueLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  margin-top: 16px;
+}
+
+.benefitItem {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+}
+
+.benefitIcon {
+  width: 43px;
+  height: 43px;
+  background: #f6f3f2;
+  border: 1px solid rgba(196, 197, 217, 0.5);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.benefitContent {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.benefitTitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1c1b1b;
+}
+
+.benefitDesc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #5f5e5e;
+}
+
+.valueRight {
+  position: relative;
+}
+
+.vizBox {
+  background: #eae7e7;
+  border: 1px solid rgba(196, 197, 217, 0.2);
+  border-radius: 7px;
+  padding: 14px;
+  overflow: hidden;
+}
+
+.vizImage {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.floatingOverlay {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background: #ffffff;
+  border: 1px solid rgba(196, 197, 217, 0.2);
+  border-radius: 4px;
+  padding: 16px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.overlayLabel {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 14px;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: #5f5e5e;
+}
+
+.overlayValue {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 33px;
+  color: #2e5bff;
+}
+
+.overlaySubtext {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 14px;
+  color: #5f5e5e;
+}
+
+/* ==================== COMPARISON TABLE ==================== */
+.comparisonSection {
+  background: #002872;
+  padding: 96px 10vw;
+}
+
+.comparisonContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.comparisonHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.compEyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  color: #2e5bff;
+}
+
+.compHeading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -0.9px;
+  text-transform: uppercase;
+  color: #fcf9f8;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHeaderRow th {
+  padding: 24px 16px;
+  border-bottom: 1px solid rgba(229, 226, 225, 0.2);
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #8a8a8a;
+}
+
+.thUs {
+  background: rgba(246, 243, 242, 0.05);
+  color: #2e5bff !important;
+}
+
+.tableRow td {
+  padding: 40px 16px;
+  border-bottom: 1px solid rgba(229, 226, 225, 0.1);
+  vertical-align: middle;
+  text-align: center;
+}
+
+.tdFeature {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  width: 205px;
+}
+
+.tdOthers {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8a8a8a;
+  width: 325px;
+}
+
+.tdUs {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  background: rgba(246, 243, 242, 0.05);
+  width: 366px;
+}
+
+/* ==================== PRECISION PIPELINE ==================== */
+.pipelineSection {
+  background: #fcf9f8;
+  padding: 48px 10vw 80px;
+}
+
+.pipelineContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 73px;
+}
+
+.pipelineHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pipelineConnector {
+  width: 100%;
+  height: 1px;
+  background: rgba(196, 197, 217, 0.3);
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: -73px;
+}
+
+.stepCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stepNum {
+  width: 73px;
+  height: 73px;
+  border-radius: 11px;
+  background: #fcf9f8;
+  border: 2px solid #1c1b1b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 29px;
+  color: #1c1b1b;
+}
+
+.stepNumActive {
+  border-color: #2e5bff;
+  color: #2e5bff;
+}
+
+.stepNumBlue {
+  background: #2e5bff;
+  border-color: #2e5bff;
+  color: #fcf9f8;
+}
+
+.stepTitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #1c1b1b;
+}
+
+.stepDesc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #5f5e5e;
+  max-width: 248px;
+}
+
+.stepTags {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.stepTag {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 14px;
+  letter-spacing: 0.91px;
+  text-transform: uppercase;
+  color: #1c1b1b;
+}
+
+.stepTagBlue {
+  color: #2e5bff;
+}
+
+.tagDot {
+  width: 4px;
+  height: 4px;
+  background: #1c1b1b;
+  border-radius: 0;
+  flex-shrink: 0;
+}
+
+.tagDotBlue {
+  background: #2e5bff;
+}
+
+/* ==================== TABLET (1024px) ==================== */
+@media (max-width: 1024px) {
+  .hero {
+    height: 360px;
+  }
+
+  .heroContent {
+    padding: 0 24px;
+    width: auto;
+  }
+
+  /* Friction Crisis */
+  .frictionSection {
+    padding: 40px 24px;
+  }
+
+  .problemRow {
+    flex-direction: column;
+  }
+
+  .problemCardLarge {
+    min-height: auto;
+    padding: 36px;
+  }
+
+  .problemCardBlue {
+    padding: 36px;
+  }
+
+  .blueCardContent {
+    max-width: 100%;
+  }
+
+  /* Value & Benefits */
+  .valueSection {
+    padding: 64px 24px;
+  }
+
+  .valueContainer {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .floatingOverlay {
+    bottom: 16px;
+    left: 16px;
+  }
+
+  /* Comparison Table */
+  .comparisonSection {
+    padding: 64px 24px;
+  }
+
+  .comparisonContainer {
+    gap: 48px;
+  }
+
+  /* Pipeline */
+  .pipelineSection {
+    padding: 40px 24px 64px;
+  }
+
+  .pipelineContainer {
+    gap: 48px;
+  }
+
+  .stepsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 0;
+  }
+
+  .pipelineConnector {
+    display: none;
+  }
+
+  .stepDesc {
+    max-width: 100%;
+  }
+}
+
+/* ==================== MOBILE (768px) ==================== */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 320px;
+    padding: 72px 0 36px;
+    margin-top: 56px;
+  }
+
+  .heroContent {
+    padding: 0 24px;
+    width: auto;
+  }
+
+  .heroHeading {
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: -2px;
+  }
+
+  .heroDesc {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  /* Friction Crisis */
+  .sectionHeading {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .problemCardLarge,
+  .problemCardSmallGray,
+  .problemCardSmallWhite,
+  .problemCardBlue {
+    padding: 28px;
+  }
+
+  .problemCardLarge {
+    min-height: auto;
+  }
+
+  .problemTitle,
+  .problemTitleAlt {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .problemDesc {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /* Value & Benefits */
+  .benefitsList {
+    gap: 32px;
+  }
+
+  .benefitTitle {
+    font-size: 16px;
+  }
+
+  /* Comparison Table */
+  .compHeading {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .tableRow td {
+    padding: 24px 12px;
+  }
+
+  .tdFeature {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .tdOthers {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .tdUs {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .tdFeature, .tdOthers, .tdUs {
+    width: auto;
+  }
+
+  .tableHeaderRow th {
+    padding: 16px 12px;
+    font-size: 10px;
+  }
+
+  /* Pipeline */
+  .stepsGrid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .stepNum {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .stepTitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+/* ==================== SMALL MOBILE (480px) ==================== */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 280px;
+    padding: 68px 0 32px;
+  }
+
+  .heroContent {
+    padding: 0 16px;
+  }
+
+  .heroHeading {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .heroDesc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /* Friction Crisis */
+  .frictionSection {
+    padding: 32px 16px;
+  }
+
+  .sectionHeading {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .problemCardLarge,
+  .problemCardSmallGray,
+  .problemCardSmallWhite,
+  .problemCardBlue {
+    padding: 20px;
+  }
+
+  .problemTitle,
+  .problemTitleAlt {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* Value & Benefits */
+  .valueSection {
+    padding: 48px 16px;
+  }
+
+  .benefitItem {
+    gap: 14px;
+  }
+
+  .benefitIcon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .overlayValue {
+    font-size: 22px;
+  }
+
+  /* Comparison */
+  .comparisonSection {
+    padding: 48px 16px;
+  }
+
+  .compHeading {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .tableRow td {
+    padding: 16px 8px;
+  }
+
+  .tdFeature {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .tdOthers {
+    font-size: 11px;
+  }
+
+  .tdUs {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  /* Pipeline */
+  .pipelineSection {
+    padding: 32px 16px 48px;
+  }
+
+  .stepNum {
+    width: 52px;
+    height: 52px;
+    font-size: 16px;
+  }
+
+  .stepTitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,105 @@
+.section {
+  background: #fcf9f8;
+  position: relative;
+  overflow: hidden;
+  padding: 48px 64px;
+  min-height: 275px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blurCircle1,
+.blurCircle2 {
+  position: absolute;
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  filter: blur(40px);
+}
+
+.blurCircle1 {
+  left: 10%;
+  top: 0;
+}
+
+.blurCircle2 {
+  right: 10%;
+  bottom: -20px;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 32px;
+  letter-spacing: -0.8px;
+  color: #1163fb;
+}
+
+.subtitle {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.67px;
+  color: #000000;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: #1163fb;
+  border-radius: 5px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 14px;
+  color: #fcf9f8;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.ctaButton:hover {
+  background: #0d52d9;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 24px;
+    min-height: auto;
+  }
+
+  .heading {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 32px 16px;
+  }
+
+  .heading {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}

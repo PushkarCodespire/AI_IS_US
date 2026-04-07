@@ -1,0 +1,691 @@
+/* ==================== HERO ==================== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 426px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 63px;
+}
+
+.heroBgWrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 30, 30, 0.6);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  padding: 0 5vw;
+}
+
+.heroEyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #2e5bff;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.heroHeading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 96px;
+  letter-spacing: -4.8px;
+  color: #ffffff;
+}
+
+.heroDesc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29.25px;
+  color: #ffffff;
+  max-width: 795px;
+  margin-top: 4px;
+}
+
+.heroBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px;
+  background: #1163fb;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 29px;
+  color: #ffffff;
+  margin-top: 24px;
+  transition: background 0.2s;
+}
+
+.heroBtn:hover {
+  background: #0d52d9;
+}
+
+.heroArrow {
+  height: 12px;
+}
+
+/* ==================== FOUNDER STORY ==================== */
+.founderSection {
+  background: #ffffff;
+  padding: 48px 10vw;
+}
+
+.founderContainer {
+  margin: 0 auto;
+  display: flex;
+  gap: 46px;
+  align-items: stretch;
+}
+
+.founderImageWrapper {
+  flex-shrink: 0;
+  width: 30vw;
+  border: 1px solid #c4c5d9;
+  overflow: hidden;
+}
+
+.founderImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.founderContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+  min-width: 0;
+  overflow: visible;
+}
+
+.founderTextBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.founderHeadingBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+.founderHeading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 41px;
+  letter-spacing: -0.33px;
+  color: #04000b;
+}
+
+.founderDivider {
+  width: 109px;
+  height: 1px;
+  background: #1163fb;
+}
+
+.founderSubhead {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.founderBody {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 90%;
+}
+
+.founderBody p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #0b0b0b;
+  text-align: justify;
+}
+
+.founderQuote {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.quoteText {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  color: #1268ff;
+}
+
+.quoteAuthor {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 21px;
+  color: #6b7280;
+}
+
+/* ==================== BLUEPRINT SHIFT ==================== */
+.blueprintSection {
+  background: #fcf9f8;
+  padding: 48px 10vw;
+}
+
+.blueprintContainer {
+  margin: 0 auto;
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.blueprintText {
+  flex: 1;
+}
+
+.blueprintHeading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -0.9px;
+  text-transform: uppercase;
+  color: #1c1b1b;
+  margin-bottom: 32px;
+}
+
+.blueprintParagraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.blueprintPara {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 36px;
+  color: #5f5e5e;
+}
+
+.blueprintImageWrapper {
+  flex-shrink: 0;
+  width: 25vw;
+  background: #e5e2e1;
+  overflow: hidden;
+  position: relative;
+}
+
+.blueprintImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.blueprintLabel {
+  background: #ffffff;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blueprintLabelText {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #1c1b1b;
+}
+
+/* ==================== OUR APPROACH ==================== */
+.approachSection {
+  background: #fcf9f8;
+  padding: 20px 10vw 128px 10vw;
+}
+
+.approachContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.approachHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.approachEyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #747688;
+}
+
+.approachHeading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -0.9px;
+  text-transform: uppercase;
+  color: #1c1b1b;
+}
+
+.approachGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.approachCard {
+  background: #f6f3f2;
+  border: 1px solid #eae7e7;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 378px;
+}
+
+.approachIconBox {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.approachCardTitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: #1c1b1b;
+}
+
+.approachCardDesc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #5f5e5e;
+  max-width: 288px;
+}
+
+/* ==================== WHAT WE STAND FOR ==================== */
+.valuesSection {
+  background: #105ef0;
+  padding: 128px 10vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.valuesContainer {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 64px;
+}
+
+.valuesLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.valuesEyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: rgba(229, 226, 225, 0.6);
+}
+
+.valuesHeading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.4px;
+  color: #fcf9f8;
+}
+
+.valuesBar {
+  width: 96px;
+  height: 4px;
+  background: #ffffff;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.principleCard {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.principleHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.principleTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.45px;
+  text-transform: uppercase;
+  color: #fcf9f8;
+}
+
+.principleDesc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.75px;
+  color: rgba(229, 226, 225, 0.8);
+}
+
+/* ==================== TABLET (1024px) ==================== */
+@media (max-width: 1024px) {
+  .hero {
+    height: 360px;
+  }
+
+  .heroContent {
+    padding: 0 24px;
+    max-width: 100%;
+  }
+
+  /* Founder */
+  .founderSection {
+    padding: 32px 24px;
+  }
+
+  .founderHeadingBlock{
+    width: 100%;
+  }
+
+  .founderContainer {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .founderImageWrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .founderImage {
+    max-height: 400px;
+    object-position: center top;
+  }
+
+  /* Blueprint */
+  .blueprintSection {
+    padding: 32px 24px;
+  }
+
+  .blueprintContainer {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .blueprintImageWrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .blueprintPara {
+    line-height: 28px;
+  }
+
+  /* Approach */
+  .approachSection {
+    padding: 32px 24px 80px;
+  }
+
+  .approachContainer {
+    gap: 48px;
+  }
+
+  .approachGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .approachCard {
+    min-height: auto;
+  }
+
+  .approachCardDesc {
+    max-width: 100%;
+  }
+
+  /* Values */
+  .valuesSection {
+    padding: 64px 24px;
+  }
+
+  .valuesContainer {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .valuesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==================== MOBILE (768px) ==================== */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 320px;
+    padding: 72px 0 36px;
+    margin-top: 56px;
+  }
+
+  .heroHeading {
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: -1.5px;
+  }
+
+  .heroDesc {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .heroBtn {
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  /* Founder */
+  .founderHeading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .founderSubhead {
+    font-size: 14px;
+  }
+
+  .founderBody{
+    width: 100%;
+  }
+
+  .founderBody p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .founderQuote .quoteText {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  /* Blueprint */
+  .blueprintHeading {
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 24px;
+  }
+
+  .blueprintPara {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .blueprintLabel {
+    padding: 20px;
+  }
+
+  /* Approach */
+  .approachGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .approachHeading {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .approachCard {
+    padding: 28px;
+    min-height: auto;
+  }
+
+  .approachCardDesc {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 100%;
+  }
+
+  /* Values */
+  .valuesGrid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .valuesHeading {
+    font-size: 36px;
+    line-height: 38px;
+  }
+
+  .principleTitle {
+    font-size: 16px;
+  }
+
+  .principleDesc {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+/* ==================== SMALL MOBILE (480px) ==================== */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 280px;
+    padding: 68px 0 32px;
+  }
+
+  .heroContent {
+    padding: 0 16px;
+  }
+
+  .heroEyebrow {
+    font-size: 12px;
+  }
+
+  .heroHeading {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -1px;
+  }
+
+  .heroDesc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .founderSection {
+    padding: 24px 16px;
+  }
+
+  .founderHeading {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .blueprintSection {
+    padding: 24px 16px;
+  }
+
+  .blueprintHeading {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .approachSection {
+    padding: 24px 16px 64px;
+  }
+
+  .approachHeading {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .valuesSection {
+    padding: 48px 16px;
+  }
+
+  .valuesHeading {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
