@@ -18,9 +18,15 @@
   gap: 16px;
 }
 
-.arrowicon{
+.arrowicon {
   width: 10px;
   height: auto;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.arrowOpen {
+  transform: rotate(180deg);
 }
 
 .heading {
@@ -86,14 +92,28 @@
   text-align: center;
 }
 
+.answerWrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease, opacity 0.25s ease;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.answerOpen {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
 .faqAnswer {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
   color: #5f5e5e;
-  margin-top: 11px;
+  padding-top: 11px;
   padding-right: 40px;
+  min-height: 0;
 }
 
 @media (max-width: 1024px) {

@@ -67,11 +67,17 @@ export default function FAQ() {
               >
                 <div className={styles.faqQuestion}>
                   <span>{faq.question}</span>
-                  <img src="/Vector1.png" className={styles.arrowicon} alt="img" />
+                  <img
+                    src="/Vector1.png"
+                    className={`${styles.arrowicon} ${openIndex === i ? styles.arrowOpen : ""}`}
+                    alt=""
+                  />
                 </div>
-                {openIndex === i && (
+                <div
+                  className={`${styles.answerWrapper} ${openIndex === i ? styles.answerOpen : ""}`}
+                >
                   <p className={styles.faqAnswer}>{faq.answer}</p>
-                )}
+                </div>
               </div>
             ))}
           </div>
@@ -86,11 +92,17 @@ export default function FAQ() {
                 >
                   <div className={styles.faqQuestion}>
                     <span>{faq.question}</span>
-                    <img src="/Vector1.png" className={styles.arrowicon} alt="img" />
+                    <img
+                      src="/Vector1.png"
+                      className={`${styles.arrowicon} ${openIndex === idx ? styles.arrowOpen : ""}`}
+                      alt=""
+                    />
                   </div>
-                  {openIndex === idx && (
+                  <div
+                    className={`${styles.answerWrapper} ${openIndex === idx ? styles.answerOpen : ""}`}
+                  >
                     <p className={styles.faqAnswer}>{faq.answer}</p>
-                  )}
+                  </div>
                 </div>
               );
             })}
